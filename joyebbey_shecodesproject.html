@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Ice Cream Flavours</title>
+</head>
+<style>
+    body {
+        background-color: #f8f8ea;
+        background: linear-gradient(to bottom, #f8f8ea, #a6a69dc4)
+    }
+    h1 {
+        text-align: center;
+        padding: 20px;
+        color: #643a6b;
+    }
+    h2 {
+        text-align: center;
+        padding: 10px;
+        font-weight: 5;
+        color: #643a6b;
+
+    }
+    img {
+        display: block;
+        size: 30px auto;
+        margin: 0 auto;
+        border-radius: 10px;
+        width: 400px;
+        height: 300px;
+        padding: 10px auto;
+    }
+    hr {
+        color: #643a6b6c
+    }
+    p {
+        line-height: 1.5;
+    }
+    .top3 {
+        font-size: larger;
+    }
+    .iceCream {
+        text-align: center;
+        background-color: #643a6b6c;
+        border: 3px solid #643a6b6c;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+    button:hover {
+        transition: opacity 220ms ease;
+        background-color: #643a6b;
+        color: #f8f8ea;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 20px;
+        border: 3px solid #643a6b6c;
+        background-color: #643a6b6c;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .more {
+        text-align: center;
+        color: #643a6b;
+    }
+    .footer {
+        text-align: center;
+        font-size: small;
+        color: #643a6b;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>
+        🍦TOP ICE CREAM FLAVORS🍦
+    </h1>
+    <hr>
+    <h2>
+        A Top 3 summary of my favourite ice-cream flavors 
+    </h2>
+    <hr>
+    <div class="iceCream">
+        <p class="top3">
+            <strong>
+            No.1 Vanilla Choc-Chip
+            </strong>
+        </p>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/097/original/vanilla_choc-chip.jpeg?1705597897" 
+            alt="Vanilla Choc-chip">
+        <p>
+            <em>Vanilla Choc-Chip</em> 
+            ice cream is cherished for its timeless and universally loved vanilla flavor paired with crunchy chocolate chips, striking a perfect balance of sweetness. Its nostalgic appeal and versatility as a base for creative desserts make it a crowd-pleaser enjoyed globally. In essence, this classic flavor delivers a satisfying and comforting ice cream experience with its harmonious blend of textures and flavors.
+        </p>
+    </div>
+    <br>
+    <div class="iceCream">
+        <p class="top3">
+            <strong>
+            No.2 Chocolate-Fudge-Brownie
+            </strong>
+        </p>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/114/original/Screenshot_2024-01-18_at_20.33.25.png?1705602821" 
+            alt="Chocolate-Fudge-Brownie">
+        <p>
+            <em>Chocolate fudge brownie</em>
+            ice cream stands out as one of the best, thanks to its rich and indulgent blend of flavors. The velvety chocolate ice cream is perfectly complemented by fudge swirls and gooey brownie chunks, creating a satisfying texture. The intense chocolate goodness, combined with the sweet fudge, delivers a deeply enjoyable taste. This flavor not only excels in decadence but also evokes comforting and indulgent feelings. Loved for its lusciousness, chocolate fudge brownie ice cream offers a delightful treat with a harmonious fusion of chocolate richness and delightful textures.
+        </p>  
+     </div>
+     <br> 
+     <div class="iceCream">
+        <p class="top3">
+            <strong>
+            No.3 Rum & Raisin
+            </strong>
+        </p>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/113/original/rrrr.png?1705602685" 
+            alt="Rum & Raisin">
+        <p>
+            <em>Rum & Raisin</em>
+            ice cream is among the best due to its unique and sophisticated flavor profile. The infusion of rum adds a subtle warmth and complexity to the creamy base, creating a distinctive taste. The plump raisins provide a delightful chewiness, enhancing the overall texture. This flavor stands out for its balance between the sweet raisins and the hint of alcohol, offering a nuanced and enjoyable experience. Loved for its sophisticated yet comforting combination, rum and raisin ice cream is a standout choice for those seeking a more refined and flavorful treat.
+        </p>
+    </div>
+    <button class="shopFlavors">
+        Shop These Flavors!
+    </button>
+    <br>
+    <p class="more">
+        Interested in more of my top foodie flavors? Take a look at my blog below!
+            <a href="www.joystop10.com"
+             target="_blank">
+            <br>
+        Joy's Top 3s!
+    </p>
+    </a>
+    <br>
+    <p class="footer">
+        This page was built by 
+        <br>
+        <strong>
+            Joy Ebbey 
+        </strong>
+        </a>
+    </p>
+    </div>
+<script>
+    function shop() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let enjoy =  prompt("Do you agree with my list?");
+        let iceCream = prompt("What is your favorite ice cream flavor?");
+
+        if (enjoy === "Yes") {
+            alert("Thanks for stopping by " + name + "! " + "We will keep in touch! In the meantime, eat more " + iceCream + " ice cream! 🍦")
+        } else {
+            alert("Thanks for stopping by " + name + "! " + "We will keep in touch! In the meantime, I'll give more " + iceCream + " ice cream a try! 🍦")
+        }
+    }
+    let shopButton = document.querySelector(".shopFlavors")
+    shopButton.addEventListener("click", shop)
+</script>
+</body>
+</html>
